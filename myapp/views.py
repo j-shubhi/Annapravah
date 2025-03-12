@@ -10,6 +10,15 @@ from geopy.distance import geodesic
 from django.http import HttpResponse
 from reportlab.lib.pagesizes import A5
 from reportlab.pdfgen import canvas
+from django.contrib.auth.decorators import user_passes_test
+
+def superuser_required(view_func):
+    return user_passes_test(lambda u: u.is_superuser)(view_func)
+
+@superuser_required
+def logistics(request):
+    return render(request, "logistics.html")
+
 
 logger = logging.getLogger(__name__)
 
