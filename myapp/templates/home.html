@@ -4,14 +4,24 @@
 {% block activeHome %}active{% endblock %}
 
 {% block content %}
-<div class="hero-section text-center text-white d-flex align-items-center">
+<div class="hero-section text-center text-white flex items-center justify-center">
     <div class="container">
         <img src="{% static 'images/logo.png' %}" alt="Annapravah Logo" class="img-fluid mb-3" style="max-width: 150px;">
-        <h1 class="display-4 fw-bold">Welcome to Annapravah</h1>
-        <p class="lead">Together we can reduce food waste and feed those in need.</p>
-        <div class="d-flex justify-content-center gap-3">
-            <a href="{% url 'donor_dashboard' %}" class="btn btn-success btn-lg">Donate Food</a>
-            <a href="{% url 'request_food' %}" class="btn btn-success btn-lg">Request Food</a>
+        <h1 class="text-4xl md:text-5xl font-bold mb-2">Welcome to Annapravah</h1>
+        <p class="text-lg md:text-xl mb-4">Together we can reduce food waste and feed those in need.</p>
+        <div class="flex justify-center gap-3 mb-5 flex-wrap">
+            <a href="{% url 'donor_dashboard' %}" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg text-lg">Donate Food</a>
+            <a href="{% url 'request_food' %}" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg text-lg">Request Food</a>
+        </div>
+
+        <!-- Sponsor Callout -->
+        <div class="inline-block bg-white bg-opacity-10 rounded-lg px-6 py-4 text-sm md:text-base leading-relaxed backdrop-blur-sm">
+            <p class="font-semibold mb-1">🚀 Looking for sponsors and collaborators to bring Annapravah to the real world.</p>
+            <p class="mb-2">Let’s work together to turn this platform into an on-ground movement.</p>
+            <p>
+                📞 <span class="font-medium">+91 81309 13958</span> &nbsp;|&nbsp; 
+                📧 <a href="mailto:devajrathore16@gmail.com" class="underline text-white hover:text-green-200">devajrathore16@gmail.com</a>
+            </p>
         </div>
     </div>
 </div>
