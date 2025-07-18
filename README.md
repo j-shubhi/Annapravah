@@ -3,6 +3,8 @@ https://www.canva.com/design/DAGs5syhpG0/NjWI-KTBUVYCCiT2vvguTQ/edit?utm_content
 
 ## Bridging the Gap Between Food Waste and Hunger
 
+### Live : https://annapravah-mvp.onrender.com/
+
 ### Team Members:
 - Devaj Rathore
 - Saanvi Singh
